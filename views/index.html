@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Domain Check</title>
+    <link href="/public/styling.css" rel="stylesheet" type="text/css" />
+    <script defer src="/public/app.js"></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Domain Check</title>
-	<link href="/public/styling.css" rel="stylesheet" type="text/css" />
-	<script defer src="/public/app.js"></script>
-</head>
+  <body>
+    <h1>Domain Checker</h1>
 
-<body>
-	<h1>Domain Checker</h1>
+    <input
+      id="userString"
+      class="inputBox"
+      type="text"
+      name="Input Box"
+      placeholder="Enter your domain here"
+    />
 
-	<input id="userString" class="inputBox" type="text" name="Input Box" placeholder="Enter your domain here">
-
-	<table id="domainInfo">
-		<tr>
-			<th>Status</th>
-			<th>Registrant</th>
-			<th>Expiration date:</th>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
-</body>
-
+    <table id="domainInfo">
+      <tr>
+        <th>Status</th>
+        <th>Registrant</th>
+        <th>Expiration date:</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
 </html>

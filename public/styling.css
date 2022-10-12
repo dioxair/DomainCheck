@@ -1,37 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
 body {
-    font-family: Outfit;
-    background-color: #191515;
-    color: peachpuff;
-    text-align: center;
+  font-family: Outfit;
+  background-color: #191515;
+  color: peachpuff;
+  text-align: center;
 }
 
 h1 {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 #domainInfo {
   border-collapse: collapse;
-	margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   width: 75%;
 }
 
 @media screen and (max-width: 767px) {
-    #domainInfo {
-        width: 100%;
-    }
+  #domainInfo {
+    width: 100%;
+  }
 }
 
-#domainInfo td, #domainInfo th {
+#domainInfo td,
+#domainInfo th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#domainInfo tr:nth-child(even){background-color: #171717;}
+#domainInfo tr:nth-child(even) {
+  background-color: #171717;
+}
 
-#domainInfo tr:hover {background-color: #202020;}
+#domainInfo tr:hover {
+  background-color: #202020;
+}
 
 #domainInfo th {
   padding-top: 12px;
@@ -41,38 +46,39 @@ h1 {
 }
 
 .inputBox {
-    margin-bottom: 25px;
-    font-family: Outfit;
-    width: 65%;
-    background-color: #303030;
-    color: peachpuff;
-    border: 2px solid peachpuff;
-    border-radius: 4px;
-    padding: 12px;
-    transition: all 500ms;
+  margin-bottom: 25px;
+  font-family: Outfit;
+  width: 65%;
+  background-color: #303030;
+  color: peachpuff;
+  border: 2px solid peachpuff;
+  border-radius: 4px;
+  padding: 12px;
+  transition: all 500ms;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .inputBox:focus {
-    border-radius: 15px;
-    transition: 0.2s;
+  border-radius: 15px;
+  transition: 0.2s;
 }
 
 input {
-    outline-width: 0ch;
+  outline-width: 0ch;
 }
 
 .inputBox:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-2px) scale(1.06);
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-2px) scale(1.06);
 }
 
 .inputBox:focus {
-    box-shadow: peachpuff 0px 0.05em 0.5em, peachpuff 0px 0.05em 0.5em;
-    transform: translateY(5px) scale(1.06);
+  box-shadow: peachpuff 0px 0.05em 0.5em, peachpuff 0px 0.05em 0.5em;
+  transform: translateY(5px) scale(1.06);
 }

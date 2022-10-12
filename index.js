@@ -5,8 +5,8 @@ const app = express();
 function getTime() {
   const date = new Date();
 
-  let dateAndTime = date.toLocaleString('en-US', {
-    timeZone: 'America/New_York',
+  let dateAndTime = date.toLocaleString("en-US", {
+    timeZone: "America/New_York",
   });
 
   return dateAndTime;
@@ -14,7 +14,7 @@ function getTime() {
 
 app.use(function logger(req, res, next) {
   console.log(`${getTime()} EST - ${req.method} ${req.path} - ${req.ip}`);
-  console.log("")
+  console.log("");
   next();
 });
 
